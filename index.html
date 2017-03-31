@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>feedback</title>
+	<meta name="description" content="" />
+</head>
+<body>
+	<script src="lib/jquery/jquery-2.2.0.min.js"></script>
+	<script src="stable/2.0/feedback.js"></script>
+	<link rel="stylesheet" href="stable/2.0/feedback.min.css" />
+	
+	<div id="main-container">
+		<span>Hello world</span>
+		<br>
+		<span>Hello itelib!</span>
+	</div>
+	
+	<script>
+	document.addEventListener('DOMContentLoaded',
+                                  function () {
+        $.feedback({
+            <!-- ajaxURL: 'example-listener.php', -->
+            <!-- html2canvasURL: 'html2canvas.js', -->
+            <!-- onClose: function() { window.location.reload(); } -->
+			mainElementSelector : '#main-container'
+        });
+        }, false);
+	</script>
+	
+</body>
+</html>
